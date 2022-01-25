@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int year, month, day, total=0, monthday, totalmonthday=0, leap, i, remain;
+    printf("Please input year: ");
+    scanf("%d", &year);
+    printf("Please input month: ");
+    scanf("%d", &month);
+    printf("Please input day: ");
+    scanf("%d", &day);
+    printf("Date: %d.%d.%d\n", year, month, day);
+
+    total = 365*(year-1);
+    for(i=1;i<month;i++)
+    {
+        if((i==1) || (i==3) || (i==5) || (i==7) || (i==8) || (i==10)  ){
+            monthday = 31;
+        }else if((i==4) || (i==6) || (i==9) || (i==11)){
+            monthday = 30;
+        }else{
+            monthday = 28;
+
+        }
+
+        totalmonthday = totalmonthday + monthday;
+        printf("month=%d, monthday=%d, totalmonthday=%d\n",i, monthday,totalmonthday);
+    }
+
+    leap = year/4-year/100+year/400;
+
+    total = total  + totalmonthday + day + leap;
+
+    if(year>3)
+    {
+        if(month <= 2)
+        {
+            total = total-1;
+        }
+    }
+    remain = total%7;
+    printf("total day=%d\n", total);
+    printf("week day=%d\n\n", remain);
+    // 因為西元1年1月1日為星期日,不是星期1,所以要shift一天
+    // %7
+    // 餘 1: 星期日
+    // 餘 2: 星期1
+    // 餘 3: 星期2
+    // 餘 4: 星期3
+    // 餘 5: 星期4
+    // 餘 6: 星期5
+    // 餘 0: 星期6
+    if(remain == 0){
+        printf("It is Saturday.\n");
+    }else if(remain == 1){
+        printf("It is Sunday.\n");
+    }else if(remain == 2){
+        printf("It is Monday.\n");
+    }else if(remain == 3){
+        printf("It is Tuesday.\n");
+    }else if(remain == 4){
+        printf("It is Wednesday.\n");
+    }else if(remain == 5){
+        printf("It is Thursday.\n");
+    }else{
+        printf("It is Friday.\n");
+    }
+    system("pause");
+    return 0;
+}
+

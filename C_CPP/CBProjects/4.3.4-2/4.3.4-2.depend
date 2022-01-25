@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1638953772 source:d:\cbprojects\4.3.4-2\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1638953974 source:d:\cbprojects\4.3.4-2\main_2.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+

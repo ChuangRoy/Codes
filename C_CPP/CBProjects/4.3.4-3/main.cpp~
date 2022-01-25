@@ -1,0 +1,42 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+int leap_year(int $year){
+    return (($year % 400 == 0) || (($year % 100 != 0) && ($year % 4 == 0)));
+}
+
+int main()
+{
+    int year,month,day,total_days_this_year = 0,total_days; // Define
+    string Week_Day; // 星期幾
+    total_days = 365*(year-1) + (year-1)/4 - (year-1)/100 + (year-1)/400; //從現在到前一年的12月31日有幾天
+    cout << "Input year month day:";
+    cin >> year >> month >> day;
+    if (year <= 0 || month < 1 || month > 12 || (month==2 && day > 28+(leap_year(year))) || ((month == 4 || month == 6 || month == 9 || month == 11) && day > 30) || day > 31){
+        cout << "Input Error !" << endl;
+        system("pause");
+        return 0;
+    }
+    int a[] = {31,28+leap_year(year),31,30,31,30,31,31,30,31,30,31};
+    for (int i = 0;i <= month-2;i++){
+        total_days_this_year += a[i];
+    }
+    total_days_this_year += day;
+    total_days += total_days_this_year;
+    cout << year << "." << month << "." << day << " is the "<< total_days_this_year << "th day of this year" << endl;
+    cout << "Total day is " << total_days << " days" << endl << endl;
+    switch((total_days+1)%7){
+        case 1:Week_Day = "Monday";break;
+        case 2:Week_Day = "Tuesday";break;
+        case 3:Week_Day = "Wednesday";break;
+        case 4:Week_Day = "Thursday";break;
+        case 5:Week_Day = "Friday";break;
+        case 6:Week_Day = "Saturday";break;
+        case 0:Week_Day = "Sunday";break;
+    }
+    cout << "This day is " << Week_Day << endl;
+    system("pause");
+    return 0;
+}
