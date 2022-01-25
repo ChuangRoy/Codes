@@ -1,0 +1,16 @@
+import turtle 
+t = turtle.Pen()
+t.reset()
+t.up()
+t.backward(150)
+t.left(90)
+t.backward(150)
+t.right(90)
+for x in range(0,4):
+    t.up()
+    t.forward(100)
+    t.down()
+    t.forward(100)
+    t.up()
+    t.forward(100)
+    t.left(90)
