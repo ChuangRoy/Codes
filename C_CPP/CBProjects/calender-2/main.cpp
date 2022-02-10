@@ -13,12 +13,11 @@ int main()
 {
     int total_days_this_year = 0,total_days = 0,days_of_current_month; // Define
     string month_text;
-    float year,month,day; // Define 避免惡搞
+    float year,month; // Define 避免惡搞
     string Week_Day; // 星期幾
     cout << "Input year:";
     cin >> year;
-    day = 1;
-    total_days = 365*(year-1) + (year-1)/4 - (year-1)/100 + (year-1)/400; //從現在到前一年的12月31日有幾天
+
 
     if (year-int(year)!=0 ){ //避免惡搞：輸入小數判斷
         cout << "Input Error !" << endl;
@@ -32,41 +31,17 @@ int main()
         system("pause");
         return 0;
     }
-    // 今年天數總和
-    int a[] = {31,28+leap_year(year),31,30,31,30,31,31,30,31,30,31};
-    for (int i = 0;i <= month-2;i++){ // month -2 :第一項是a[0] -1  前一個月 -1
-        total_days_this_year += a[i];
-    }
-    total_days_this_year += day;
-    total_days += total_days_this_year;
-
-/*
-    cout << year << "." << month << "." << day << " is the "<< total_days_this_year << "th day of this year" << endl;
-    cout << "Total day is " << total_days << " days" << endl << endl;
-
-    // 星期幾判斷
-    switch(total_days%7){
-        case 1:Week_Day = "Monday";break;
-        case 2:Week_Day = "Tuesday";break;
-        case 3:Week_Day = "Wednesday";break;
-        case 4:Week_Day = "Thursday";break;
-        case 5:Week_Day = "Friday";break;
-        case 6:Week_Day = "Saturday";break;
-        case 0:Week_Day = "Sunday";break;
-    }
-    cout << "This day is " << Week_Day << endl;
-*/
-
-
-
-/*
-    cout << "Days of current month is " << days_of_current_month << " days" << endl;
-    cout << endl;
-*/
 
 
 for (month=1;month<=12;month++) {
-
+    total_days = 365*int(year-1) + int(year-1)/4 - int(year-1)/100 + int(year-1)/400; //從現在到前一年的12月31日有幾天
+    // 今年天數總和
+    int a[] = {0,31,28+leap_year(year),31,30,31,30,31,31,30,31,30,31};
+    for (int i = 0;i <= month-1;i++){ // month -2 :第一項是a[0] -1  前一個月 -1
+        total_days_this_year += a[i];
+    }
+    total_days_this_year += 1;
+    total_days += total_days_this_year;
     switch(int(month)) {
       case 1:days_of_current_month = 31;month_text = "Jan";break;
       case 2:days_of_current_month = 28+leap_year(year);month_text = "Feb";break;
