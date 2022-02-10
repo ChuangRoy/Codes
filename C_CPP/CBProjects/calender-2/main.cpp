@@ -35,6 +35,7 @@ int main()
 
 for (month=1;month<=12;month++) {
     total_days = 365*int(year-1) + int(year-1)/4 - int(year-1)/100 + int(year-1)/400; //從現在到前一年的12月31日有幾天
+    total_days_this_year = 0;
     // 今年天數總和
     int a[] = {0,31,28+leap_year(year),31,30,31,30,31,31,30,31,30,31};
     for (int i = 0;i <= month-1;i++){ // month -2 :第一項是a[0] -1  前一個月 -1
