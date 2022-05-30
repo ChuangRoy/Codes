@@ -1,2 +1,3 @@
 # Codes
-This is a repl of my codes. (If something is stupid please don't laugh)
+
+This is a repl of my codes. (If something is childish please don't laugh)
