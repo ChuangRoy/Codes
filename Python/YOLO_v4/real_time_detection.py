@@ -231,10 +231,11 @@ def real_time_obj_detection(model_path,GPU_ratio=0.2):
         writer.release()
     cv2.destroyAllWindows()
 
+
 if __name__ == "__main__":
     # model_path = r"G:\我的雲端硬碟\Python\Code\Pycharm\YOLO_V4\yolo_weights\pb_model.pb"
-    model_path = r"D:\code\python\yolo_test\YOLO_v4_416.ckpt.meta"
+    model_path = r"C:\Users\s0415\downloads\yolov4.weight\YOLO_v4_416.ckpt.meta"
     # model_path = r"C:\Users\JohnnyKavnie\Desktop\yolo_test\YOLO_v4_416.ckpt.meta"
     # model_path = r"C:\Users\JohnnyKavnie\Downloads\YOLO_v4_416.ckpt.meta"
-    GPU_ratio = 0.4
+    GPU_ratio = None
     real_time_obj_detection(model_path,GPU_ratio=GPU_ratio)

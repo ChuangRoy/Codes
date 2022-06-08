@@ -33,8 +33,8 @@ if __name__ == "__main__":
     # model_path = r"C:\Users\JohnnyKavnie\Desktop\yolo_test\yolov4.weights"
     # output_dir = r"C:\Users\JohnnyKavnie\Desktop\yolo_test"
 
-    model_path = r"D:\code\python\yolo_test\yolov4.weights"
-    output_dir = r"D:\code\python\yolo_test"
+    model_path = r"C:\Users\s0415\downloads\yolov4.weights"
+    output_dir = r"C:\Users\s0415\downloads\yolov4.weight"
     size = 416
     convert_weight(model_path, output_dir, size=size)
 
