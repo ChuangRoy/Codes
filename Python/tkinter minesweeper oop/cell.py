@@ -2,6 +2,7 @@ from tkinter import Button
 import settings
 import utils
 import random
+import os
 
 ## Cell
 class Cell:
