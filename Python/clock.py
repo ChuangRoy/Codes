@@ -1,11 +1,9 @@
-﻿
-
 import turtle
 from datetime import *
-print('Made by Roy :)')
-import sys
 
-# 提起畫筆，向前運動一段距離放下
+print('Made by Roy :)')
+
+# 擡起畫筆，向前運動一段距離放下
 def Skip(step):
     turtle.penup()
     turtle.forward(step)
@@ -78,7 +76,7 @@ def SetupClock(radius):
             Skip(-radius)
         turtle.right(6)
 
-def Week(t):
+def Week(t):   
     week = ["星期一", "星期二", "星期三",
             "星期四", "星期五", "星期六", "星期日"]
     return week[t.weekday()]
@@ -87,7 +85,7 @@ def Date(t):
     y = t.year
     m = t.month
     d = t.day
-    return "%d/%d/%s" % (m, d, y)
+    return "%s %d%d" % (y, m, d)
 
 def Tick():
     # 繪製錶針的動態顯示
@@ -99,7 +97,7 @@ def Tick():
     minHand.setheading(6 * minute)
     hurHand.setheading(30 * hour)
 
-    turtle.tracer(False)
+    turtle.tracer(False) 
     printer.forward(65)
     printer.write(Week(t), align="center",
                   font=("Courier", 14, "bold"))
@@ -122,6 +120,4 @@ def main():
     turtle.mainloop()
 
 if __name__ == "__main__":
-    print(sys.executable)
     main()
-    
