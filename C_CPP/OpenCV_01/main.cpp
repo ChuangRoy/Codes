@@ -9,14 +9,14 @@ using namespace std;
 
 
 int main() {
-    String imgName = "C:\\Users\\s0415\\a.jpg";
+    String imgName = "a.jpg";
     Mat img;
     img = imread(imgName, IMREAD_COLOR);
     if (img.empty()) {
         cout << "Could not open or find the image" << endl;
         return -1;
     }
-    //namedWindow("display", WINDOW_AUTOSIZE);
+    namedWindow("display", WINDOW_AUTOSIZE);
     imshow("display", img);
 //    waitKey(0);
     getchar();
