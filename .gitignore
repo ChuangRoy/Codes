@@ -34,3 +34,7 @@
 *.swp
 *.py~
 *.pyc
+
+# JetBrains CLion Build Files
+*cmake-build-debug
+*cmake-build-release

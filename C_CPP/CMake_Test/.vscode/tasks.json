@@ -1,0 +1,116 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:\\msys64\\usr\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: C:\\msys64\\usr\\bin\\g++.exe"
+        },
+        {
+            "label": "mkbuild",
+            "type": "shell",
+            "command": "mkdir",  // 呼叫的命令
+            "args": [  // 命令引數
+                "-p",
+                "build"
+            ],
+            "windows":{  // windows平臺使用mkdir -Force build新建資料夾
+                "args": [
+                    "-Force",
+                    "build"
+                ]
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "cmake",  // task的名字
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                // "-DCMAKE_BUILD_TYPE=${input:CMAKE_BUILD_TYPE}",
+                ".."
+                "-G Unix Makefiles"
+            ],
+            "options": {
+                "cwd": "build"  // 表示當前執行目錄build資料夾
+            },
+            "group": "build",
+            "presentation": {  // 一些控制檯顯示配置
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile",
+            "dependsOn":["mkbuild"]  // 依賴的任務，在本任務執行前先執行mkbuild任務
+        },
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "cmake --build .",
+            "options": {
+                "cwd": "build"
+            },
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "always",
+                "clear": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "./${workspaceFolderBasename}",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "options": {
+                "cwd": "build"
+            },
+            "windows":{
+                "options": {
+                    "cwd": "build"  // windows visual studio專案會預設多生成Debug/Release目錄
+                },
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile",
+            "dependsOn":["compile"]  // 在run任務執行前先執行compile任務，確保修改的程式碼生效
+        }
+    ]
+}

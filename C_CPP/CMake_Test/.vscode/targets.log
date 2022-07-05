@@ -1,0 +1,292 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-msys
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Jul  1 12:58:21 2022
+
+# Variables
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+ACSVCPORT = 17532
+# environment
+USERPROFILE = C:\Users\s0415
+# environment
+LOCALAPPDATA = C:\Users\s0415\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-052aef28-ab92-4374-9a38-c1fe295c8a46-sock
+# environment
+VSCODE_CWD = C:\Users\s0415\AppData\Local\Programs\Microsoft VS Code
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8028_KFRSYJJDLGUPJBOG
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\s0415\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /c/Users/s0415/AppData/Local/Temp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\s0415\OneDrive
+# makefile
+CURDIR := /home/s0415/Codes/C_CPP/CMake_Test
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+!C: = c:\msys64\home\s0415\Codes\C_CPP\CMake_Test
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile
+MAKEFILE_LIST := 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 8028
+# environment
+CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-msys
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := /bin/sh
+# environment
+HOMEPATH = \Users\s0415
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.4/bin:/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.4/libnvvp:/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.4/include:/c/Program Files/NVIDIA Corporation/Nsight Compute 2021.2.1:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Windows/System32/OpenSSH:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/ProgramData/chocolatey/bin:/c/Users/s0415/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/s0415/AppData/Local/Programs/Python/Python39:/c/Users/s0415/AppData/Local/Programs/Python/Launcher:/c/Users/s0415/AppData/Local/Microsoft/WindowsApps:/c/Users/s0415/AppData/Local/Programs/OpenJDKJRE64/bin:/c/Program Files (x86)/Microsoft Visual Studio 10.0/VC/include:/c/Program Files (x86)/Microsoft Visual Studio 10.0/VC/bin:/c/Users/s0415/AppData/Local/Programs/miktex-portable/texmfs/install/miktex/bin/x64:/c/Users/s0415/AppData/Local/Programs/nodejs:/usr/bin:/c/Users/s0415/AppData/Local/Programs/Microsoft VS Code/bin
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+COMPUTERNAME = LAPTOP-D0NDH4TN
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
+# environment
+CUDA_PATH_V11_4 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4
+# environment
+LOGONSERVER = \\LAPTOP-D0NDH4TN
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = s0415
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+NVCUDASAMPLES11_4_ROOT = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.4
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = LAPTOP-D0NDH4TN
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# makefile
+.DEFAULT_GOAL := 
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+NVCUDASAMPLES_ROOT = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.4
+# environment
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-D0NDH4TN
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\s0415\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/s0415
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /c/Users/s0415/AppData/Local/Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\40fca44c3001791d20bf7a9ecb94b6f7-1.68.1-main-sock
+# environment
+TERM = xterm-256color
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+PROCESSOR_REVISION = 8d01
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+# variable set hash-table stats:
+# Load=104/1024=10%, Rehash=0, Collisions=13/128=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 1186706207, inode 21110623253533134): 6 files, no impossibilities.
+
+# 6 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 13 / storage = 109 B / avg = 8 B
+# current buf: size = 8162 B / used = 109 B / count = 13 / avg = 8 B
+
+# strcache performance: lookups = 16 / hit rate = 18%
+# hash-table stats:
+# Load=13/8192=0%, Rehash=0, Collisions=0/16=0%
+# Finished Make data base on Fri Jul  1 12:58:21 2022
+
+ 

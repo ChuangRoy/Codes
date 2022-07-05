@@ -1,0 +1,3 @@
+/home/s0415/Codes/C_CPP/CBProjects/6.4/build/CMakeFiles/6.4.dir
+/home/s0415/Codes/C_CPP/CBProjects/6.4/build/CMakeFiles/edit_cache.dir
+/home/s0415/Codes/C_CPP/CBProjects/6.4/build/CMakeFiles/rebuild_cache.dir

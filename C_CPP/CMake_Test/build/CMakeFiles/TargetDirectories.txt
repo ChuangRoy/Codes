@@ -1,0 +1,3 @@
+/home/s0415/Codes/C_CPP/CMake_Test/build/CMakeFiles/CMake_Test.dir
+/home/s0415/Codes/C_CPP/CMake_Test/build/CMakeFiles/edit_cache.dir
+/home/s0415/Codes/C_CPP/CMake_Test/build/CMakeFiles/rebuild_cache.dir
