@@ -1,0 +1,2 @@
+export CPATH="${CPATH:+${CPATH}:}/usr/lib/gcc/x86_64-pc-msys/11.3.0/include:/usr/include"
+export CPLUS_INCLUDE_PATH="${CPLUS_INCLUDE_PATH:+${CPLUS_INCLUDE_PATH}:}/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++"
